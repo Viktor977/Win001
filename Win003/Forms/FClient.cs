@@ -15,16 +15,20 @@ namespace Win003
 {
     public partial class FClient : Form
     {
-        public FClient()
+        private static FClient _instanse;
+        private FClient()
         {
             InitializeComponent();
            
         }
+        public static FClient GetInstance() => _instanse ??= new FClient();
+
         Client client = new Client();
-        private async void btnSend_Click(object sender, EventArgs e)
+        private  void btnSend_Click(object sender, EventArgs e)
         {
             client.Message = txtBoxSend.Text;
             client.SendMsg();
+            listBoxResive.Items.Add(client.Message);
             txtBoxSend.Text = "";
           
         }

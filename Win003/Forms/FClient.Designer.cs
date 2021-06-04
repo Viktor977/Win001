@@ -304,8 +304,6 @@ namespace Win003
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label_IP;
-        private System.Windows.Forms.TextBox txtBoxIP;
-        private System.Windows.Forms.TextBox txtBoxPort;
         private System.Windows.Forms.TextBox txtBoxSend;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbPort;
@@ -315,5 +313,7 @@ namespace Win003
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton toolStripBtn_Reset;
         private System.Windows.Forms.Button btn_SwitchServer;
+        public System.Windows.Forms.TextBox txtBoxIP;
+        public System.Windows.Forms.TextBox txtBoxPort;
     }
 }

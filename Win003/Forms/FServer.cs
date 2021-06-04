@@ -18,30 +18,23 @@ namespace Win003
         public FServer()
         {
             InitializeComponent();
-            ModeSwitch();
+           
         }
 
          Server server = new Server();
             
         private void ModeInit()
         {
-            if (toolStrip1.Enabled)
-            {
-                MessageBox.Show("Не указан порт и IP", "ERROR",
-                   MessageBoxButtons.OK, MessageBoxIcon.Error);//TODO
-                return;
-            }
-            server.IP = txtBox_IP.Text;
-            server.RPort = ushort.Parse("30001");
-
-            server.SPort = ushort.Parse(txtBox_Port.Text);
+                 
+            server.RPort = ushort.Parse("30001");        
+            server.IP = FClient.GetInstance().txtBoxIP.Text;
+            server.SPort = ushort.Parse(FClient.GetInstance().txtBoxPort.Text);
 
         }
 
         private async void btn_Send_Click(object sender, EventArgs e)
         {
-            server.Message = txtBox_Message.Text;
-            //listBox_Resive.Items.Add(server.Answer);
+            server.Message = txtBox_Message.Text;         
             listBox_Resive.Items.Add(server.Message);
 
            
@@ -66,12 +59,15 @@ namespace Win003
                         
         }
 
-       
-        private void ModeSwitch()
+        private void FServer_Shown(object sender, EventArgs e)
         {
-            toolStrip1.Enabled = false;
+            listBox_Resive.Invoke(new Action(() => {
 
+                ;
+            
+            }));
+            
+    
         }
-       
     }
 }

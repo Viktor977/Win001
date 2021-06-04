@@ -30,126 +30,23 @@ namespace Win003
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FServer));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripBtn_Mode1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripBtn_Mode2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripBtn_Mode3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripBtn_Mode4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripBtn_Reset = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.listBox_Resive = new System.Windows.Forms.ListBox();
             this.lb_Resive = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.lb_IP = new System.Windows.Forms.Label();
-            this.txtBox_IP = new System.Windows.Forms.TextBox();
-            this.lb_Port = new System.Windows.Forms.Label();
-            this.txtBox_Port = new System.Windows.Forms.TextBox();
             this.txtBox_Message = new System.Windows.Forms.TextBox();
             this.lb_Send = new System.Windows.Forms.Label();
             this.btn_Send = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
-            this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.Aqua;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripBtn_Mode1,
-            this.toolStripSeparator1,
-            this.toolStripBtn_Mode2,
-            this.toolStripSeparator2,
-            this.toolStripBtn_Mode3,
-            this.toolStripSeparator3,
-            this.toolStripBtn_Mode4,
-            this.toolStripSeparator4,
-            this.toolStripBtn_Reset});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(423, 25);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripBtn_Mode1
-            // 
-            this.toolStripBtn_Mode1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripBtn_Mode1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBtn_Mode1.Image")));
-            this.toolStripBtn_Mode1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripBtn_Mode1.Name = "toolStripBtn_Mode1";
-            this.toolStripBtn_Mode1.Size = new System.Drawing.Size(51, 22);
-            this.toolStripBtn_Mode1.Text = "Mode 1";
-            this.toolStripBtn_Mode1.ToolTipText = "Режим Клиент-человек Сервер-человек";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripBtn_Mode2
-            // 
-            this.toolStripBtn_Mode2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripBtn_Mode2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBtn_Mode2.Image")));
-            this.toolStripBtn_Mode2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripBtn_Mode2.Name = "toolStripBtn_Mode2";
-            this.toolStripBtn_Mode2.Size = new System.Drawing.Size(51, 22);
-            this.toolStripBtn_Mode2.Text = "Mode 2";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripBtn_Mode3
-            // 
-            this.toolStripBtn_Mode3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripBtn_Mode3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBtn_Mode3.Image")));
-            this.toolStripBtn_Mode3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripBtn_Mode3.Name = "toolStripBtn_Mode3";
-            this.toolStripBtn_Mode3.Size = new System.Drawing.Size(51, 22);
-            this.toolStripBtn_Mode3.Text = "Mode 3";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripBtn_Mode4
-            // 
-            this.toolStripBtn_Mode4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripBtn_Mode4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBtn_Mode4.Image")));
-            this.toolStripBtn_Mode4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripBtn_Mode4.Name = "toolStripBtn_Mode4";
-            this.toolStripBtn_Mode4.Size = new System.Drawing.Size(51, 22);
-            this.toolStripBtn_Mode4.Text = "Mode 4";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripBtn_Reset
-            // 
-            this.toolStripBtn_Reset.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripBtn_Reset.ForeColor = System.Drawing.Color.Red;
-            this.toolStripBtn_Reset.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBtn_Reset.Image")));
-            this.toolStripBtn_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripBtn_Reset.Name = "toolStripBtn_Reset";
-            this.toolStripBtn_Reset.Size = new System.Drawing.Size(39, 22);
-            this.toolStripBtn_Reset.Text = "Reset";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.listBox_Resive);
-            this.panel1.Controls.Add(this.lb_Resive);
             this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(423, 222);
+            this.panel1.Size = new System.Drawing.Size(423, 281);
             this.panel1.TabIndex = 1;
             // 
             // listBox_Resive
@@ -160,13 +57,13 @@ namespace Win003
             this.listBox_Resive.Location = new System.Drawing.Point(12, 18);
             this.listBox_Resive.Name = "listBox_Resive";
             this.listBox_Resive.ScrollAlwaysVisible = true;
-            this.listBox_Resive.Size = new System.Drawing.Size(398, 184);
+            this.listBox_Resive.Size = new System.Drawing.Size(398, 244);
             this.listBox_Resive.TabIndex = 1;
             // 
             // lb_Resive
             // 
             this.lb_Resive.AutoSize = true;
-            this.lb_Resive.Location = new System.Drawing.Point(0, 0);
+            this.lb_Resive.Location = new System.Drawing.Point(104, 10);
             this.lb_Resive.Name = "lb_Resive";
             this.lb_Resive.Size = new System.Drawing.Size(155, 15);
             this.lb_Resive.TabIndex = 0;
@@ -176,38 +73,6 @@ namespace Win003
             // 
             this.toolTip1.IsBalloon = true;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            // 
-            // lb_IP
-            // 
-            this.lb_IP.AutoSize = true;
-            this.lb_IP.Location = new System.Drawing.Point(12, 269);
-            this.lb_IP.Name = "lb_IP";
-            this.lb_IP.Size = new System.Drawing.Size(95, 15);
-            this.lb_IP.TabIndex = 2;
-            this.lb_IP.Text = "Введите свой  IP";
-            // 
-            // txtBox_IP
-            // 
-            this.txtBox_IP.Location = new System.Drawing.Point(12, 298);
-            this.txtBox_IP.Name = "txtBox_IP";
-            this.txtBox_IP.Size = new System.Drawing.Size(186, 23);
-            this.txtBox_IP.TabIndex = 3;
-            // 
-            // lb_Port
-            // 
-            this.lb_Port.AutoSize = true;
-            this.lb_Port.Location = new System.Drawing.Point(242, 269);
-            this.lb_Port.Name = "lb_Port";
-            this.lb_Port.Size = new System.Drawing.Size(124, 15);
-            this.lb_Port.TabIndex = 4;
-            this.lb_Port.Text = "Введите номер порта";
-            // 
-            // txtBox_Port
-            // 
-            this.txtBox_Port.Location = new System.Drawing.Point(210, 298);
-            this.txtBox_Port.Name = "txtBox_Port";
-            this.txtBox_Port.Size = new System.Drawing.Size(198, 23);
-            this.txtBox_Port.TabIndex = 5;
             // 
             // txtBox_Message
             // 
@@ -220,7 +85,7 @@ namespace Win003
             // lb_Send
             // 
             this.lb_Send.AutoSize = true;
-            this.lb_Send.Location = new System.Drawing.Point(128, 393);
+            this.lb_Send.Location = new System.Drawing.Point(139, 384);
             this.lb_Send.Name = "lb_Send";
             this.lb_Send.Size = new System.Drawing.Size(120, 15);
             this.lb_Send.TabIndex = 7;
@@ -254,49 +119,28 @@ namespace Win003
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(423, 615);
             this.Controls.Add(this.btn_Save);
+            this.Controls.Add(this.lb_Resive);
             this.Controls.Add(this.btn_Send);
             this.Controls.Add(this.lb_Send);
             this.Controls.Add(this.txtBox_Message);
-            this.Controls.Add(this.txtBox_Port);
-            this.Controls.Add(this.lb_Port);
-            this.Controls.Add(this.txtBox_IP);
-            this.Controls.Add(this.lb_IP);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.toolStrip1);
             this.Name = "FServer";
             this.Text = "Server";
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.Shown += new System.EventHandler(this.FServer_Shown);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton toolStripBtn_Mode2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripButton toolStripBtn_Mode1;
-        private System.Windows.Forms.ToolStripButton toolStripBtn_Mode3;
-        private System.Windows.Forms.ToolStripButton toolStripBtn_Mode4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton toolStripBtn_Reset;
         private System.Windows.Forms.ListBox listBox_Resive;
         private System.Windows.Forms.Label lb_Resive;
-        private System.Windows.Forms.Label lb_IP;
-        private System.Windows.Forms.TextBox txtBox_IP;
-        private System.Windows.Forms.Label lb_Port;
-        private System.Windows.Forms.TextBox txtBox_Port;
         private System.Windows.Forms.TextBox txtBox_Message;
         private System.Windows.Forms.Label lb_Send;
         private System.Windows.Forms.Button btn_Send;

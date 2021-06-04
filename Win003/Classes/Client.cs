@@ -16,9 +16,7 @@ namespace Win003
 
 
         private void InitForBroadcast(ushort port)
-        {
-            
-
+        {          
             ip = IPAddress.Parse(IP);
             endIp = new IPEndPoint(ip, port);
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.IP);

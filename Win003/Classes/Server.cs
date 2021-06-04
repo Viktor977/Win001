@@ -33,8 +33,8 @@ namespace Win003
         {
 
             InitForBroadcast(RPort);
-            while (true)
-            {
+            
+            
                 while (true)
                 {
 
@@ -57,7 +57,7 @@ namespace Win003
                 }
                
 
-            }
+            
         }
 
 

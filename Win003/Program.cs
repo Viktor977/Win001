@@ -18,7 +18,7 @@ namespace Win003
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
           //  Application.Run(new FServer());
-           Application.Run(new FClient());
+           Application.Run( FClient.GetInstance());
         }
     }
 }

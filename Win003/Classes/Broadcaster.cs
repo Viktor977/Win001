@@ -26,6 +26,11 @@ namespace Win003
         
             "Hello","How do you do?",
                "I`m well","And you?",
+
+               "I`m good","By","Goodby" ,
+
+               "I`m good","By" 
+
         };
 
         public string Conversation()
